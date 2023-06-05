@@ -1,6 +1,3 @@
-const User = require("../models/User");
-const Post = require("../models/Post");
-
 exports.logout = async (req, res) => {
   try {
     res

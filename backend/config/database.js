@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-require('dotenv').config({path:"backend/config/.env"});
+require('dotenv').config();
 
 exports.connectDB=()=>{
     mongoose.connect(process.env.MONGO_URL,({

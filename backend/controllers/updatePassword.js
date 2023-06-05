@@ -9,7 +9,7 @@ exports.updatePassword = async (req, res) => {
     if (!oldPassword || !newPassword) {
       return res.status(400).json({
         success: false,
-        message: "please provide old and new password",
+        message: "please provide old and new password"
       });
     }
 

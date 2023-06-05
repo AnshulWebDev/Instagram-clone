@@ -1,14 +1,16 @@
 const express = require("express");
-const {
-  createPost,
-  likeAndUnlikePosts,
-  deletePost,
-  updateCaption,
-  addComment,
-  deleteComment,
-} = require("../controllers/post");
+
+//adding post controller
+const { addComment } = require("../controllers/addComment");
+const { createPost } = require("../controllers/createPost");
+const { deleteComment } = require("../controllers/deleteComment");
+const { deletePost } = require("../controllers/deletePost");
+const { getPostOfFollowing } = require("../controllers/getPostofFollowing");
+const { likeAndUnlikePosts } = require("../controllers/likeAndUnlikePost");
+const { updateCaption } = require("../controllers/updateCaption");
+
+//add Middleware
 const { isAuthenticated } = require("../middlewares/auth");
-const { getPostOfFollowing } = require("../controllers/post");
 
 const router = express.Router();
 
