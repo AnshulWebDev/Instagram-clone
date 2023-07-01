@@ -8,8 +8,8 @@ function App() {
   return (
     <Router>
       {/* <Preloader/> */}
-      <Header/>
-      {/* <Login/> */}
+      {/* <Header/> */}
+      <Login/>
     </Router>
   );
 }
