@@ -14,7 +14,9 @@ module.exports = {
       'desktop': '1280px',
     },
     fontFamily: {
-      roboto: ['Roboto', 'sans-serif']
+      roboto: ['Roboto', 'sans-serif'],
+      opensans: ['Open Sans', 'sans-serif'],
+
     },
   },
   plugins: [],

@@ -10,7 +10,7 @@ import { GoHomeFill } from "react-icons/go";
 import { FiSearch } from "react-icons/fi";
 import { FaRegCompass } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import textLogo from "../utils/Instagram-Text_logo.svg";
+import textLogo from "../utils/Instagram-Text_logo.png";
 import profileImg from "../utils/profile.jpg";
 
 const Header = () => {
@@ -20,7 +20,7 @@ const Header = () => {
       <div className="h-11 w-full bg-[#121212] p-4 flex justify-between items-center tablet:hidden">
         <div className="h-[29px] w-[103px]">
           <Link>
-            <img src={textLogo} />
+            <img className="bg-white" src={textLogo} />
           </Link>
         </div>
 
