@@ -5,17 +5,15 @@ import Preloader from "./component/Preloader";
 import Login from "./component/Login";
 import Signup from "./component/Signup";
 import Home from "./component/Home";
-import Cards from "./component/Cards";
 
 function App() {
   return (
     <Router>
       {/* <Preloader/> */}
-      {/* <Header/> */}
       {/* <Login/> */}
       {/* <Signup/> */}
-      {/* <Home/> */}
-      <Cards/>
+      <Home/>
+      
     </Router>
   );
 }

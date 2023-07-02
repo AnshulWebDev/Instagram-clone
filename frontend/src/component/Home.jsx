@@ -1,9 +1,23 @@
-import React from 'react'
+import React from "react";
+import Cards from "./Cards";
+import SideNavigation from "./SideNavigation";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div className="flex justify-between">
+      <div className="">
+        <SideNavigation/>
+      </div>
 
-export default Home
+      <div>
+
+      </div>
+        <Cards/>
+      <div>
+
+      </div>
+    </div>
+  );
+};
+
+export default Home;
