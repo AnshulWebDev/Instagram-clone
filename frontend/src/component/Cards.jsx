@@ -11,7 +11,7 @@ import { HiOutlineEmojiHappy } from "react-icons/hi";
 const Cards = () => {
   return (
     // w-[468px]
-    <div className="max-w-[468px] border-slate-700 border-[0.5px] rounded bg-black">
+    <div className="max-w-[468px] border-slate-800 border-[0.5px] rounded bg-black mb-3">
       
       {/* profile & user name  */}
       <div className="w-full h-14">
@@ -87,7 +87,7 @@ const Cards = () => {
         </div>
       </div>
 
-      <div className="h-[0.5px] bg-slate-700 w-full mt-1"></div>
+      <div className="h-[0.5px] bg-slate-800 w-full mt-1"></div>
 
       {/* add comment  */}
         <form
