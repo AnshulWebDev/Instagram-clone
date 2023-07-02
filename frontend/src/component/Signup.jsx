@@ -6,75 +6,90 @@ import microsoft from "../utils/microsoft.png";
 import Googleplay from "../utils/Googleplay.png";
 const Signup = () => {
   return (
-    <div className="w-full flex flex-col items-center mt-4 ">
-      <div className="flex flex-col justify-center items-center mt-3">
-        <img className="fill-black h-12" src={Logo} alt="" srcset="" />
-        <p className="text-[#737373] text-base text-center w-10/12 my-3">
-          Sign up to see photos and videos from your friends.
-        </p>
-        <Link className="w-[300px] h-8 bg-[#0095f6] text-sm font-bold text-white rounded-lg flex items-center justify-center">
-          <div className="h-4 flex items-center gap-2 ">
-            <img className="h-full" src={facebookLogo} alt="" srcset="" />
-            <p className="text-[#ffffff] text-center">Log in with FaceBook</p>
+    <div className="w-full flex flex-col items-center mt-4">
+      <div className="tablet:border ">
+        <div className="flex flex-col justify-center items-center mt-3">
+          <img className="fill-black h-12" src={Logo} alt="" srcset="" />
+          <p className="text-[#737373] text-base text-center w-10/12 my-3">
+            Sign up to see photos and videos from your friends.
+          </p>
+          <Link className="w-[300px] h-8 bg-[#0095f6] text-sm font-bold text-white rounded-lg flex items-center justify-center">
+            <div className="h-4 flex items-center gap-2 ">
+              <img className="h-full" src={facebookLogo} alt="" srcset="" />
+              <p className="text-[#ffffff] text-center">Log in with FaceBook</p>
+            </div>
+          </Link>
+        </div>
+
+        <div className="flex items-center flex-col justify-center w-full my-6">
+          <div className="flex items-center justify-center">
+            <div className="h-[1px] w-[124px] bg-gray-400"></div>
+            <div className="text-[#737373] mx-4">OR</div>
+            <div className="h-[1px] w-[124px] bg-gray-400"></div>
           </div>
-        </Link>
-      </div>
+          <div className="w-[300px] mt-5">
+          <form className="flex flex-col" action="">
+            <input
+              type="text"
+              placeholder="Phone number or email"
+              className="w-full h-10 text-sm font-normal mb-1 border-2 rounded-md p-2 text-black placeholder:text-gray-500 bg-gray-50"
+            />
+            <input
+              className="w-full h-10 text-sm font-normal mb-1 border-2 rounded-md p-2 text-black placeholder:text-gray-500 bg-gray-50"
+              type="text"
+              placeholder="Full Name"
+            />
 
-      <div className="flex items-center justify-start w-[300px] my-6">
-        <div className="h-[1px] w-3/5  bg-gray-400"></div>
-        <div className="text-[#737373] mx-4">OR</div>
-        <div className="h-[1px] w-3/5 bg-gray-400"></div>
-      </div>
-      <div className="w-[300px]">
-        <form className="flex flex-col items-center" action="">
-          <input
-            type="text"
-            placeholder="Phone number or email"
-            className="w-full h-10 text-sm font-normal mb-1 border-2 rounded-md p-2 text-black placeholder:text-gray-500 bg-gray-50"
-          />
-          <input
-            className="w-full h-10 text-sm font-normal mb-1 border-2 rounded-md p-2 text-black placeholder:text-gray-500 bg-gray-50"
-            type="text"
-            placeholder="Full Name"
-          />
+            <input
+              className="w-full h-10 text-sm font-normal mb-1 border-2 rounded-md p-2 text-black placeholder:text-gray-500 bg-gray-50"
+              type="text"
+              placeholder="Username"
+            />
 
-          <input
-            className="w-full h-10 text-sm font-normal mb-1 border-2 rounded-md p-2 text-black placeholder:text-gray-500 bg-gray-50"
-            type="text"
-            placeholder="Username"
-          />
+            <input
+              className="w-full h-10 text-sm font-normal mb-4 border-2 rounded-md p-2 text-black placeholder:text-gray-500 bg-gray-50"
+              type="text"
+              placeholder="Password"
+            />
 
-          <input
-            className="w-full h-10 text-sm font-normal mb-4 border-2 rounded-md p-2 text-black placeholder:text-gray-500 bg-gray-50"
-            type="text"
-            placeholder="Password"
-          />
-
-          <div className="flex flex-col">
-            <p className="text-sm font-extralight text-[#737373] mb-2 text-center">
-              People who use our service may have uploaded your contact
-              information to Instagram.
-              <p className="text-indigo-800 cursor-pointer">Learn More</p>
-            </p>
-
-            <p className="text-sm font-extralight text-[#737373] mb-4 text-center">
-              By signing up, you agree to our
-              <span className="text-indigo-800 cursor-pointer">Terms</span> ,
-              <p>
-                <span className="text-indigo-800 cursor-pointer">
-                  Privacy Policy
-                </span>
-                and
-                <span className="text-indigo-800 cursor-pointer">Cookies</span>
+            <div className="flex flex-col">
+              <p className="text-sm font-extralight text-[#737373] mb-2 text-center">
+                People who use our service may have uploaded your contact
+                information to Instagram.
+                <p className="text-indigo-800 cursor-pointer">Learn More</p>
               </p>
-              Policy .
-            </p>
-          </div>
 
-          <button className="w-full h-8 bg-[#4CB5F9] text-sm font-bold text-white rounded-lg">
-            Log in
-          </button>
-        </form>
+              <p className="text-sm font-extralight text-[#737373] mb-4 text-center">
+                By signing up, you agree to our
+                <span className="text-indigo-800 cursor-pointer">Terms</span> ,
+                <p>
+                  <span className="text-indigo-800 cursor-pointer">
+                    Privacy Policy
+                  </span>
+                  and
+                  <span className="text-indigo-800 cursor-pointer">
+                    Cookies
+                  </span>
+                </p>
+                Policy .
+              </p>
+            </div>
+
+            <button className="w-full h-8 bg-[#4CB5F9] text-sm font-bold text-white rounded-lg">
+              Sign up
+            </button>
+          </form>
+        </div>
+        </div>
+
+        
+      </div>
+
+      <div className="h-[62px] w-[369px] flex items-center justify-center gap-1 mt-3 tablet:border">
+        Have an account?
+        <Link>
+          <p className="text-[#0095f6] font-medium">Log in</p>
+        </Link>
       </div>
       <div className="flex justify-center flex-col ">
         <div className="text-center my-4 text-sm font-normal">Get the app.</div>

@@ -4,6 +4,8 @@ import Header from "./component/Header";
 import Preloader from "./component/Preloader";
 import Login from "./component/Login";
 import Signup from "./component/Signup";
+import Home from "./component/Home";
+import Cards from "./component/Cards";
 
 function App() {
   return (
@@ -11,7 +13,9 @@ function App() {
       {/* <Preloader/> */}
       {/* <Header/> */}
       {/* <Login/> */}
-      <Signup/>
+      {/* <Signup/> */}
+      {/* <Home/> */}
+      <Cards/>
     </Router>
   );
 }
