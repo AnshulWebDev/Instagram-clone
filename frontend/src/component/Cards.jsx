@@ -6,28 +6,31 @@ import { AiOutlineHeart } from "react-icons/ai";
 import { FaRegComment } from "react-icons/fa";
 import { FiShare } from "react-icons/fi";
 import { BsBookmark } from "react-icons/bs";
+import { HiOutlineEmojiHappy } from "react-icons/hi";
 
 const Cards = () => {
   return (
-    <div className="w-[468px] border">
+    <div className="w-[468px] border rounded-xl bg-black">
       {/* profile & user name  */}
       <div className="w-full h-14">
-        <div className="w-full border h-14 flex justify-between items-center py-2 px-2">
-          <div className="flex w-10 justify-center items-center">
+        <div className="w-full h-14 flex justify-between items-center py-2 px-2">
+          <div className="flex w-10 justify-center items-center bg-black">
             <img
-              className="rounded-full flex justify-center items-center border"
+              className="rounded-full flex justify-center items-center border-gray-800"
               src={profile}
               alt=""
             />
           </div>
           <div className="w-full h-full flex items-center pl-1">
-            <p className="text-sm ">djasldkhjadiowedhjweoidwio</p>
+            <p className="text-sm text-white font-roboto font-medium">
+              whatsupanshul
+            </p>
           </div>
           <div>
             <button className="flex w-10 h-10 justify-center items-center">
-              <div className="bg-black w-1 h-1 rounded-full mx-[1px]"></div>
-              <div className="bg-black w-1 h-1 rounded-full mx-[1px]"></div>
-              <div className="bg-black w-1 h-1 rounded-full mx-[1px]"></div>
+              <div className="bg-white w-1 h-1 rounded-full mx-[1px]"></div>
+              <div className="bg-white w-1 h-1 rounded-full mx-[1px]"></div>
+              <div className="bg-white w-1 h-1 rounded-full mx-[1px]"></div>
             </button>
           </div>
         </div>
@@ -36,36 +39,68 @@ const Cards = () => {
       {/* post  */}
       <div className="w-full h-[585px]">
         <div className="p-1">
-          <img src={tempPost} alt="" />
+          <img className="rounded" src={tempPost} alt="" />
         </div>
       </div>
 
-      <div>
+      <div className="px-2 font-opensans">
         {/* like, comment, sare  */}
-        <div className="w-full h-12 border flex justify-between items-center py-2 px-2">
+        <div className="w-full h-12 flex justify-between items-center py-2 ">
           <div className="flex">
-            <div className="flex w-10 justify-center items-center">
-              <AiOutlineHeart className="w-6 h-6" />
-            </div>
-            <div className="flex w-10 justify-center items-center">
-              <FaRegComment className="w-6 h-6" />
-            </div>
-            <div className="flex w-10 justify-center items-center">
-              <FiShare className="w-6 h-6" />
-            </div>
-            <div></div>
+            <button className="flex w-10 justify-center items-center">
+              <AiOutlineHeart className="w-6 h-6 text-white" />
+            </button>
+            <button className="flex w-10 justify-center items-center">
+              <FaRegComment className="w-6 h-6 text-white" />
+            </button>
+            <button className="flex w-10 justify-center items-center">
+              <FiShare className="w-6 h-6 text-white" />
+            </button>
           </div>
           <button className="flex w-10 h-10 justify-center items-center">
-            <BsBookmark className="w-6 h-6" />
+            <BsBookmark className="w-6 h-6 text-white" />
           </button>
         </div>
 
-        {/* likes */}
+        {/* likes count */}
         <div className="w-full h-6 flex justify-between items-center py-2 px-2">
-          <p>14,379 <span>likes</span> </p>
+          <button className="text-white font-medium">
+            14,379 <span>likes</span>{" "}
+          </button>
         </div>
 
-        
+        {/* comment section  */}
+        <div className="text-[#9B9B9B] px-2 pb-2 text-sm">
+          <button>
+            <p>
+              View all <span>12</span> comments
+            </p>
+          </button>
+        </div>
+
+        <div className="text-[#9B9B9B] px-2 pb-2 text-xs">
+          <p>
+            2 DAY <span>AGO</span>
+          </p>
+        </div>
+
+        {/* add comment  */}
+        <form
+          className="w-full h-12 flex justify-between items-center pr-2 border-gray-300"
+          action=""
+        >
+          <button className="flex w-10 justify-center items-center">
+            <HiOutlineEmojiHappy className="w-6 h-6 text-white" />
+          </button>
+          <input
+            className="placeholder:text-[#9B9B9B] w-full bg-black outline-none border-none text-white"
+            type="text"
+            placeholder="Add a comments..."
+          />
+          <button className="flex w-10 h-10 justify-center items-center text-[#a8a8a8]">
+            <p>Post</p>
+          </button>
+        </form>
       </div>
     </div>
   );
