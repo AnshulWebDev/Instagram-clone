@@ -2,17 +2,8 @@ import React from "react";
 import { BsPlusSquare } from "react-icons/bs";
 import {
   AiOutlineHeart,
-  AiOutlineInstagram,
-  AiOutlineMessage,
-  AiOutlineMenu,
 } from "react-icons/ai";
-import { GoHomeFill } from "react-icons/go";
-import { FiSearch } from "react-icons/fi";
-import { FaRegCompass } from "react-icons/fa";
 import { Link } from "react-router-dom";
-// import textLogo from "../utils/Instagram-Text_logo.png";
-import profileImg from "../utils/profile.jpg";
-import Home from "./Home";
 import textLogoPng from "../utils/instagram.svg";
 
 const Header = () => {

@@ -1,41 +1,35 @@
 import React from "react";
 import Cards from "./Cards";
 import SideNavigation from "./SideNavigation";
-import Suggestion from "./Suggestion";
+import Storynav from "./Storynav";
+import Header from "./Header";
 
 const Home = () => {
   return (
-    <div className="flex bg-[#121212]">
+    <div className="flex flex-row">
       <div className="fixed">
-        <SideNavigation/>
+        <SideNavigation />
       </div>
 
-      <div className="flex m-auto mt-3">
-       <div className="">
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-
-        <Cards/>
-
-
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-       </div>
-       <div className="hidden tablet:flex">
-       <Suggestion/>
-       </div>
+      <div className="mx-auto  flex flex-col justify-center items-center">
+        <Header />
+        <Storynav />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
       </div>
     </div>
   );

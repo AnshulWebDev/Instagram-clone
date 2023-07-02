@@ -1,7 +1,6 @@
 import React from "react";
 import profile from "../utils/profile.jpg";
 import tempPost from "../utils/ptempost.jpg";
-import { FcLike } from "react-icons/fc";
 import { AiOutlineHeart } from "react-icons/ai";
 import { FaRegComment } from "react-icons/fa";
 import { FiShare } from "react-icons/fi";
@@ -11,14 +10,13 @@ import { HiOutlineEmojiHappy } from "react-icons/hi";
 const Cards = () => {
   return (
     // w-[468px]
-    <div className="max-w-[468px] border-slate-800 border-[0.5px] rounded bg-black mb-3">
-      
+    <div className="max-w-[468px] rounded-lg border-slate-800 border-[0.5px] bg-black mb-3">
       {/* profile & user name  */}
       <div className="w-full h-14">
         <div className="w-full h-14 flex justify-between items-center py-1 px-2">
           <button className="flex w-10 justify-center items-center bg-black">
             <img
-              className="rounded-full flex justify-center items-center border-gray-800"
+              className="rounded-full flex justify-center items-center"
               src={profile}
               alt=""
             />
@@ -107,6 +105,7 @@ const Cards = () => {
           </button>
         </form>
     </div>
+    
   );
 };
 
