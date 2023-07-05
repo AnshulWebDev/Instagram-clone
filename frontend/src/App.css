@@ -1,38 +1,54 @@
 @tailwind base;
 @tailwind components;
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: #121212;
+body {
+  background-color: #121212;
 }
-#root{
-    height: 100vh;
-    scroll-behavior: smooth
+#root {
+  height: 100vh;
+  scroll-behavior: smooth;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@layer utilities {
+  .carousel-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+}
+
+@layer utilities {
+  .carousel-item {
+    flex: 0 0 auto;
+    width: 100vw;
+    scroll-snap-align: start;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 @tailwind utilities;
 
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
+  width: 5px;
 }
-  
+
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #000000;
+  background: #000000;
 }
-  
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 5px;
+  background: #888;
+  border-radius: 5px;
 }
-  
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+  background: #555;
 }

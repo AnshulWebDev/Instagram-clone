@@ -12,7 +12,7 @@ function App() {
       {/* <Preloader/> */}
       {/* <Login/> */}
       {/* <Signup/> */}
-      <Home/>
+      {/* <Home/> */}
       
     </Router>
   );

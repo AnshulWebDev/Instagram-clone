@@ -3,6 +3,7 @@ import Cards from "./Cards";
 import SideNavigation from "./SideNavigation";
 import Storynav from "./Storynav";
 import Header from "./Header";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -30,6 +31,7 @@ const Home = () => {
         <Cards />
         <Cards />
         <Cards />
+        <Footer/>
       </div>
     </div>
   );

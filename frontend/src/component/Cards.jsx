@@ -10,7 +10,7 @@ import { HiOutlineEmojiHappy } from "react-icons/hi";
 const Cards = () => {
   return (
     // w-[468px]
-    <div className="max-w-[468px] rounded-lg border-slate-800 border-[0.5px] bg-black mb-3">
+    <div className=" mobileL:w-[468px] w-full rounded-lg border-slate-800 border-[0.5px] bg-black mb-3">
       {/* profile & user name  */}
       <div className="w-full h-14">
         <div className="w-full h-14 flex justify-between items-center py-1 px-2">
