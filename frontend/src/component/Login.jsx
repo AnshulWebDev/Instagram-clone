@@ -8,22 +8,17 @@ import phone from "../utils/homephones.png"
 
 const Login = () => {
   return (
-    <div className="flex items-center flex-col mt-8">
-      <div className="flex justify-center ">
-
-        {/* left part */}
-        <div className="w-[460px] h-[600px] laptop:flex hidden"> 
-            <img src={phone} alt="" />
-        </div>
+    <div className="flex items-center flex-col  mt-8">
+      <div className="flex justify-center mx-auto">
 
         {/* right part  */}
-        <div className=" flex flex-col items-center">
-          <div className="w-[398px] h-[400px] mt-3 flex flex-col items-center pb-3 mobileL:border border-hidden">
+        <div className=" flex flex-col items-center ">
+          <div className="w-[398px] h-[400px] flex flex-col items-center pb-3 tablet:border">
             <div className="flex justify-center items-center my-8">
               <img className="fill-black h-12" src={Logo} alt="" srcset="" />
             </div>
 
-            <div className="w-[300px]">
+            <div className="w-10/12">
               <form className="flex flex-col items-center" action="">
                 <input
                   type="text"
@@ -48,7 +43,7 @@ const Login = () => {
               <div className="h-[1px] w-3/5 bg-gray-400"></div>
             </div>
 
-            <div className="h-4 flex items-center gap-2 mb-6">
+            <div className="h-4  flex items-center gap-2 mb-6">
               <img className="h-full" src={facebookLogo} alt="" srcset="" />
               <p className="text-[#385185]">Log in with FaceBook</p>
             </div>
@@ -59,7 +54,7 @@ const Login = () => {
             </div>
           </div>
 
-          <div className="w-[398px] h-[62px] flex items-center justify-center gap-1 mt-3 border">
+          <div className="w-[398px] h-[62px] flex items-center justify-center gap-1 mt-3 tablet:border">
             Don't have an account?{" "}
             <Link><p className="text-[#0095f6] font-medium">Sign up</p></Link>
           </div>
@@ -77,8 +72,8 @@ const Login = () => {
       </div>
 
       {/* footer section  */}
-      <div className="mt-6 font-thin font-opensans text-xs flex flex-col mb-16 text-[#00376b]">
-        <div className="flex text-center flex-wrap gap-4">
+      <div className="mt-6 font-thin font-opensans text-xs flex items-center justify-center flex-col mb-16 text-[#00376b]">
+        <div className="flex justify-center items-center flex-wrap  gap-4">
           <p className="cursor-pointer">Meta</p>
           <p className="cursor-pointer">About</p>
           <p className="cursor-pointer">Blog</p>

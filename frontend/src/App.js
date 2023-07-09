@@ -10,9 +10,9 @@ function App() {
   return (
     <Router>
       {/* <Preloader/> */}
-      {/* <Login/> */}
+      <Login/>
       {/* <Signup/> */}
-      <Home/>
+      {/* <Home/> */}
       
     </Router>
   );
